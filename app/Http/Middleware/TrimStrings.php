@@ -10,7 +10,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace App\Http\Middleware;
+namespace DigMan\Http\Middleware;
 
 use Illuminate\Foundation\Http\Middleware\TrimStrings as Middleware;
 

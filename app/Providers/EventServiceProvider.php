@@ -10,7 +10,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace App\Providers;
+namespace DigMan\Providers;
 
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;

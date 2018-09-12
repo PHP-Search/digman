@@ -10,7 +10,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace App\Http\Middleware;
+namespace DigMan\Http\Middleware;
 
 use Closure;
 use Illuminate\Support\Facades\Auth;
