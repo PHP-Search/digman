@@ -1,7 +1,16 @@
 <?php
 
-return [
+/*
+ * DigMan - A Full-Text Searching System For Enterprise Intranets.
+ *
+ * @package  DigMan
+ * @author   王 统 <masterwto@163.com>
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
+ */
 
+return [
     /*
     |--------------------------------------------------------------------------
     | Default Cache Store
@@ -29,7 +38,6 @@ return [
     */
 
     'stores' => [
-
         'apc' => [
             'driver' => 'apc',
         ],
@@ -72,7 +80,6 @@ return [
             'driver' => 'redis',
             'connection' => 'cache',
         ],
-
     ],
 
     /*
@@ -90,5 +97,4 @@ return [
         'CACHE_PREFIX',
         str_slug(env('APP_NAME', 'laravel'), '_').'_cache'
     ),
-
 ];
