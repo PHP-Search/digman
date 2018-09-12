@@ -1,9 +1,10 @@
 <?php
 
 $header = <<<'EOF'
-This file is part of DigMan full-text searching system.
+DigMan - A Full-Text Searching System For Enterprise Intranets.
 
-(c) 王 统 <masterwto@163.com>
+@package  DigMan
+@author   王 统 <masterwto@163.com>
 
 This source file is subject to the MIT license that is bundled
 with this source code in the file LICENSE.
@@ -11,7 +12,7 @@ EOF;
 
 $finder = PhpCsFixer\Finder::create()
     ->exclude(['bootstrap', 'database', 'resources', 'storage'])
-    ->notPath('./server.php')
+    ->notPath('server.php')
     ->in(__DIR__)
 ;
 
@@ -44,12 +45,11 @@ $config = PhpCsFixer\Config::create()
         'header_comment' => ['header' => $header],
         'include' => true,
         'lowercase_cast' => true,
-        // 'new_with_braces' => true,
-        // 'no_blank_lines_after_class_opening' => true,
-        // 'no_blank_lines_after_phpdoc' => true,
-        // 'no_empty_comment' => true,
-        // 'no_empty_phpdoc' => true,
-        // 'no_empty_statement' => true,
+        'new_with_braces' => true,
+        'no_blank_lines_after_class_opening' => true,
+        'no_blank_lines_after_phpdoc' => true,
+        'no_empty_phpdoc' => true,
+        'no_empty_statement' => true,
         'no_extra_consecutive_blank_lines' => [
             'curly_brace_block',
             'extra',
@@ -58,16 +58,14 @@ $config = PhpCsFixer\Config::create()
             'throw',
             'use',
         ],
-        // 'no_leading_import_slash' => true,
-        // 'no_leading_namespace_whitespace' => true,
-        // 'no_mixed_echo_print' => array('use' => 'echo'),
+        'no_leading_import_slash' => true,
+        'no_leading_namespace_whitespace' => true,
+        'no_mixed_echo_print' => ['use' => 'echo'],
         'no_multiline_whitespace_around_double_arrow' => true,
         'no_multiline_whitespace_before_semicolons' => true,
-        // 'no_short_bool_cast' => true,
         // 'no_singleline_whitespace_before_semicolons' => true,
         'no_spaces_around_offset' => true,
-        // 'no_trailing_comma_in_list_call' => true,
-        // 'no_trailing_comma_in_singleline_array' => true,
+        'no_trailing_comma_in_singleline_array' => true,
         // 'no_unneeded_control_parentheses' => true,
         'no_unused_imports' => true,
         'no_useless_else' => true,
@@ -87,15 +85,14 @@ $config = PhpCsFixer\Config::create()
         // 'phpdoc_separation' => true,
         // 'phpdoc_single_line_var_spacing' => true,
         // 'phpdoc_summary' => true,
-        // 'phpdoc_to_comment' => true,
-        // 'phpdoc_trim' => true,
-        // 'phpdoc_types' => true,
-        // 'phpdoc_var_without_name' => true,
+        'phpdoc_trim' => true,
+        'phpdoc_types' => true,
+        'pow_to_exponentiation' => true,
         'random_api_migration' => true,
-        // 'short_scalar_cast' => true,
+        'short_scalar_cast' => true,
         'single_quote' => true,
         'single_blank_line_before_namespace' => true,
-        // 'space_after_semicolon' => true,
+        'space_after_semicolon' => true,
         'standardize_not_equals' => true,
         'ternary_operator_spaces' => true,
         'ternary_to_null_coalescing' => true,
