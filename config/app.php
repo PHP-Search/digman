@@ -162,11 +162,11 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        DigMan\Providers\AppServiceProvider::class,
+        DigMan\Providers\AuthServiceProvider::class,
+        // DigMan\Providers\BroadcastServiceProvider::class,
+        DigMan\Providers\EventServiceProvider::class,
+        DigMan\Providers\RouteServiceProvider::class,
     ],
 
     /*

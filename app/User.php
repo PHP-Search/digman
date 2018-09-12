@@ -10,7 +10,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace App;
+namespace DigMan;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
