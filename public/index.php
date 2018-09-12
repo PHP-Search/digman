@@ -1,10 +1,13 @@
 <?php
 
-/**
- * Laravel - A PHP Framework For Web Artisans
+/*
+ * DigMan - A Full-Text Searching System For Enterprise Intranets.
  *
- * @package  Laravel
- * @author   Taylor Otwell <taylor@laravel.com>
+ * @package  DigMan
+ * @author   王 统 <masterwto@163.com>
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
  */
 
 define('LARAVEL_START', microtime(true));
